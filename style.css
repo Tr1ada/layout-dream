@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Value Sans Pro";
+    src: url("./fonts/ValueSansProRegular.eot");
+    src: url("./fonts/ValueSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/ValueSansPro-Regular.woff") format("woff"),
+    url("./fonts/ValueSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+.size {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #EDEBE9;
+    display: flex;
+    padding: 10px 83px ;
+}
+.header__text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-link {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+/* .header__menu-link:nth-child(1) {
+    font-weight: 700;
+} */
+.header__menu-link_font-weight {
+    font-weight: 700;
+    
+}
+.info-block{
+    display: flex;
+    padding: 0 80px;
+    margin-top: 20px;
+}
+.info-block-img {
+    
+}
+.info-block_serch {
+    margin-left: 45px;
+}
+.info-block_serch_text {
+    border-radius: 71px;
+    height: 40px;
+    transition: .4s;
+    color: rgba(51, 51, 51, 0.75);
+    border: 2px solid rgba(139, 71, 149, 0.8);
+    letter-spacing: -0.01em;
+    padding-left: 30px;
+    width: 1126px;
+}
+.info-block__icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    margin-left: 77px;
+}
+.info-block__icon:hover{
+    color: red;
+}
+.info-block__icon:hover svg path, .info-block__icon:hover svg circle{
+    stroke: red;
+}
+
