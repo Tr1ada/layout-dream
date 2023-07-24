@@ -199,29 +199,47 @@
 }
 .product__line-element{
     border-bottom: 1px solid #333333;
-    width: 70%;
     height: 2px;
     margin-left: 93px;
+    width: calc(100% - 93px - 280px)
 }
-.product__cards-element {
-    display: flex;
-    justify-content: space-between;
-    min-width: 280px;
-    width: 24%;
 
-}
-.product__card_border-element {
+.products-block {
+    padding: 0 10%;
+    margin-top: 83px;
     position: relative;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.product {
+    width: 24%;
+    max-width: 280px;
+}
+
+.product-image {
     border: 1px solid rgba(51, 51, 51, 0.27);
+    position: relative;
+    text-align: center;
+    height: 346px;
 }
-.product__card_border_icons-element {
-    padding-right: 20px;
-    flex-wrap: wrap;
-    gap: 20px;
-     display: flex;
-     justify-content: flex-end;
+
+.product-icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
-.product__card_border_img_text-stock {
+
+.product-icons img {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.product-image__img-discount {
     position: absolute;
     z-index: 3;
     background: #8B4795;
@@ -229,66 +247,143 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
+    line-height: 1.1;
     width: 47px;
     border-radius: 10px 40px 40px 10px;
     bottom: 34px;
     text-align: center;
 }
-.product__card_border_img_text-hit{
+
+.product-image__img-hit {
     position: absolute;
     z-index: 4;
     color: white;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
+    line-height: 1.1;
     width: 90px;
     border-radius: 10px 40px 40px 10px;
     bottom: 10px;
     background: #7E94AE;
 }
-.product__card_border_img {
-    margin:40px;
-}
-.product__card_text {
-    text-decoration: none;
-    margin-top: 14px;
-    width: 232px;
-}
-.product__card_text_style {
-    width: 50px;
+
+.product-name {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.005em;
+    line-height: 1.1;
     opacity: 0.9;
     text-decoration: none;
     color: #333333;
+    margin-top: 12px;
 }
-.product__card_text_name {
-    margin-top: 13px;
+
+.product-name__full {
+    font-size: 20px;
+    font-weight: 500;
 }
-.product__card_text_price {
-    margin-top: 10px;
+
+.product-name__price {
+    font-weight: 700;
+    font-size: 20px;
 }
-.product__card_button {
-    border-radius: 44px;
-    background: var(--yellow, #FFD103);
-    cursor: pointer;
-    margin-top: 28px;
-    width: 220px;
-    height: ;
-    flex-shrink: 0;
+
+.product-name__prev-price {
+    font-weight: 700;
+    text-decoration: line-through;
+    margin-left: 16px;
+    font-size: 18px;
 }
-.product__card_button_text {
+
+.product-name-prices {
+    display: flex;
+    align-items: center;
+}
+
+.product-button {
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     text-decoration: none;
-    color: black;
-    margin-left: 32px}
+    color: #333333;
+    margin-left: 32px;
+    background: #FFD103;
+    border-radius: 44px;
+    border: none;
+    padding: 16px 32px;
+    margin-top: 12px;
+}
 
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.arrow:hover circle {
+    stroke: #8B4795;
+    stroke-opacity: 1;
+}
+
+.arrow:hover path {
+    fill: #8B4795;
+    fill-opacity: 1;
+}
+
+.arrow-left {
+    left: 58px;
+}
+
+.arrow-right {
+    transform: translateY(-50%) rotate(180deg);
+    right: 58px;
+}
+.content-block {
+    display: flex;
+    margin-top: 140px;
+    width: 100%;
+}
+.content__card {
+    position: relative;
+}
+.content-text__title {
+    position: absolute;
+    font-size: 64px;
+    color: #FFF;
+    font-weight: 500;
+    bottom: 111px;
+    left: 80px;
+}
+.content-text__items {
+    position: absolute;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    bottom: 175px;
+    left: 80px;
+    opacity: 0.9;
+}
+.content-text__catologist {
+    position: absolute;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    transform: translateY(-50%) rotate(270deg);
+    top: 170px;
+    left: 13px;
+
+}
+.content-line {
+    position: absolute;
+    width: 15%;
+    height: 20%;
+    border-bottom: 1px dashed #FFF;
+    transform: translateY(-50%) rotate(90deg);
+    top: 58px;
+    left: 94px;
+
+}
