@@ -387,3 +387,89 @@
     left: 94px;
 
 }
+.tablet-block {
+    padding:0 150px ;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%);
+    margin-top: 140px;
+}
+.tablet-text_title {
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--black, #333);
+    padding-top: 235px;
+}
+.tablet-text__line {
+    width: 179px;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+.tablet-text_want {
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.76);
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.28px
+}
+.tablet-arrow {
+    margin-top: 65px;
+}
+.tablet-arrow__svg_transform {
+    transform: rotate(180deg);
+    margin-left: 16px;
+}
+
+.tablet-arrow__svg:hover circle {
+    stroke: #8B4795;
+    stroke-opacity: 1;
+}
+
+.tablet-arrow__svg:hover path {
+    fill: #8B4795;
+    fill-opacity: 1;
+}
+.tablet_cards {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 210px;
+}
+.tablet_card {
+    background: #FFFFFF;
+    box-shadow: 5px 17px 59px rgba(0, 0, 0, 0.2);
+    margin-left: 8%;
+    padding: 0 34px 34px 34px;
+    height: 514px;
+}
+.posters-card__image {
+    margin-top: 60px;
+    height: 260px;
+}
+.posters-card__name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 45px;
+}
+.posters-name-prices {
+    display: flex;
+    margin-top: 10px;
+}
+.posters-button {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333333;
+    background: #FFD103;
+    border-radius: 44px;
+    border: none;
+    width: 220px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-top: 15px;
+}
+.posters-card:hover .posters-button {
+    display: block;
+}
